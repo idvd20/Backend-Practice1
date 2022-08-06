@@ -1,0 +1,47 @@
+@BASE_URL = http://localhost:4500
+
+### Register User 
+
+POST {{BASE_URL}}/api/user/register 
+Content-Type: application/json 
+Accept: application/json
+
+{
+    "firstName": "Ja", 
+    "middleName": "D.", 
+    "lastName": "Divinagracia", 
+    "email": "testuser@email.com", 
+    "password": "password123"
+}
+
+### Show Users
+
+GET {{BASE_URL}}/api/user/show
+Content-Type: application/json 
+Accept: application/json
+
+### Find Users
+
+GET {{BASE_URL}}/api/user/62da428526f81cd7172c39c2
+Content-Type: application/json 
+Accept: application/json
+
+### Update User 
+
+PUT {{BASE_URL}}/api/user/
+Content-Type: application/json 
+Accept: application/json
+
+{
+    "firstName": "Dave", 
+    "middleName": "D.", 
+    "lastName": "Divinagrace", 
+    "email": "testuser1@email.com", 
+    "password": "password1234"
+}
+
+### Delete User
+
+DELETE   {{BASE_URL}}/api/user/62da428526f81cd7172c39c2
+Content-Type: application/json 
+Accept: application/json
